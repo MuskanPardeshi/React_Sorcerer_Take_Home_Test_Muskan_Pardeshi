@@ -1,0 +1,15 @@
+{
+    "dates": [
+      { "date": "2023-07-01", "booked": false },
+      { "date": "2023-07-02", "booked": true },
+      { "date": "2023-07-03", "booked": false },
+      { "date": "2023-07-04", "booked": false },
+      { "date": "2023-07-05", "booked": false },
+      { "date": "2023-07-06", "booked": false },
+      { "date": "2023-07-07", "booked": false },
+      { "date": "2023-07-08", "booked": false },
+      { "date": "2023-07-09", "booked": false },
+      { "date": "2023-07-10", "booked": false }
+    ]
+  }
+  
