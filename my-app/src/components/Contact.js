@@ -1,7 +1,7 @@
 const Conatct = () =>{
     return(
         <div>
-            <h1> i am Conatct page hahahahaha</h1>
+            <h1> i am Conatct page </h1>
         </div>
     )
 }
