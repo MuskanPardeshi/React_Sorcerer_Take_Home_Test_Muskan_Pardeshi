@@ -1,0 +1,19 @@
+.container{
+  padding: 20px; /* Adjust padding as needed */
+  border: 2px solid rgb(82, 149, 211);
+  margin: 50px auto;
+  max-width: 80%;
+  min-height: 450px; 
+}
+
+.title{
+  text-align: center;
+  font-size: 20px;
+} 
+
+.savebtn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
