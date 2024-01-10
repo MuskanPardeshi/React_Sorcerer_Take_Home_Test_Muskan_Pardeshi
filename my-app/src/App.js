@@ -1,59 +1,92 @@
- import React from "react"
-import "./App.css";
-import Header from "./components/Header"
-import Body from "./components/Body";
-// import RestaurantCard from "./components/RestaurantCard"
-import {RouterProvider, createBrowserRouter,Outlet} from "react-router-dom";
-import About from "./components/About";
-import * as ReactDOM from "react-dom/client";
-import Conatct from "./components/Contact";
-import Error from "./components/Error";
-import RestaurantMenu from "./components/RestaurantMenu";
+import React from 'react';
+import Title from './Title';
+import Button from './Button';
+import EditorComponent from './EditorComponent';
 
-const AppLayout = () =>{
-  return(
-    <div className= "app">
-    <Header></Header>
-    <Outlet/>
-    </div>
-  )
-}
-
- const AppRouter = createBrowserRouter([
-  {
-    path: "/",
-    element: <AppLayout/>,
-    children:[
-      {
-        path: "/",
-        element: <Body/>,
-      },
-      {
-        path: "/about",
-        element: <About/>,
-      },
-      {
-        path:"/contact",
-        element:<Conatct/>
-    
-      },
-      {
-        path:"/restaurants/:resId",
-        element:<RestaurantMenu/>
-      }
-    ],
-    errorElement:<Error/>
-  },
- 
-]);
-
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(<RouterProvider router={AppRouter} />);
-
-const App = ({ root }) => {
-  root.render(<RouterProvider router={AppRouter} />);
-  return null;
+const App = () => {
+    return (
+        <div>
+            {/* <Title /> */}
+            <EditorComponent />
+            {/* <Button /> */}
+        </div>
+    );
 };
 
+export default App;
 
- export default App;
+
+
+
+
+
+
+
+
+//  import React, { Suspense }  from "react"
+// import "./App.css";
+// import Header from "./components/Header"
+// import Body from "./components/Body";
+// // import RestaurantCard from "./components/RestaurantCard"
+// import {RouterProvider, createBrowserRouter,Outlet} from "react-router-dom";
+// import About from "./components/About";
+// import * as ReactDOM from "react-dom/client";
+// import Conatct from "./components/Contact";
+// import Error from "./components/Error";
+// import RestaurantMenu from "./components/RestaurantMenu";
+// import { lazy } from "react";
+// import Shimmer from "./components/Shimmer";
+
+// const Grocery = lazy(() => import("./components/Grocery"))
+
+// const AppLayout = () =>{
+//   return(
+//     <div className= "app">
+//     <Header></Header>
+//     <Outlet/>
+//     </div>
+//   )
+// }
+
+//  const AppRouter = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <AppLayout/>,
+//     children:[
+//       {
+//         path: "/",
+//         element: <Body/>,
+//       },
+//       {
+//         path: "/about",
+//         element: <About/>,
+//       },
+//       {
+//         path:"/contact",
+//         element:<Conatct/>
+    
+//       },
+//       {
+//         path:"/restaurants/:resId",
+//         element:<RestaurantMenu/>
+//       },
+//       {
+//         path:"/grocery",
+//         element:<Suspense fallback={<h1>Loading....</h1>}><Grocery/></Suspense>
+//       }
+//     ],
+//     errorElement:<Error/>
+//   },
+ 
+// ]);
+
+// // const root = ReactDOM.createRoot(document.getElementById("root"));
+// // root.render(<RouterProvider router={AppRouter} />);
+
+// const App = ({ root }) => {
+//   root.render(<RouterProvider router={AppRouter} />);
+//   return null;
+// };
+
+
+//  export default App;
